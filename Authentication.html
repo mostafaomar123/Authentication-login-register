@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="facebok.css">
+    <!-- import bootstrap && script -->
+    <script src="./node_modules/axios//dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+</head>
+<!-- style="direction: rtl;" -->
+<body> 
+    <!-- <h3 id="title1" style="visibility: hidden;">title1</h3>
+    <h3 id="title2" style="visibility: hidden;">title2</h3>
+    <h3 id="title3" style="visibility: hidden;">title3</h3>
+    <h3 id="title4" style="visibility: hidden;">title4</h3> -->
+
+
+
+    <!-- start here  -->
+    <!-- start here  -->
+    <!-- start here  -->
+    <!-- start here  -->
+    <!-- start here  -->
+    <!-- start here  -->
+    <!-- start here  -->
+
+
+    <!-- <div id="content" style="display: flex;">
+        <div style="width: 30%; height: 10px;">
+            <div id="users" style="width: 90%; height: 100px; margin: 0 auto;">
+                <div id="user" class="selected">
+                    <h3></h3>
+                    <h5></h5>
+                </div>
+            </div>
+        </div>
+        <div id="posts-continer" style="width: 70%; height: 1000px; background-color: rgb(236,236,236);">
+            <div id="posts" style="width: 90%; margin: 0 auto;">
+                <div id="post">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- start here  -->
+    <!-- start here  -->
+    <!-- start here  -->
+    <!-- start here  -->
+    <!-- start here  -->
+    <!-- start here  -->
+    <!-- start here  -->
+    <!-- start here  -->
+    <!-- start here  -->
+<!-- <div id="continar" style="height: 170vh;">
+    <div style="margin-top: 25px;">
+        <div style="color: white; margin-left: 40px;">
+            <h1 id="cityName">القاهرة</h1>
+            <h6 id="today" style="font-size: 40px; color: white; font-weight: 200;"> </h6>
+        </div>
+        <hr style="margin: 0px 50px ; border-color: #5200e1;">
+        <div class="center" style="height: 200px; margin-top: 80px; justify-content: space-around;">
+            <div class="card">
+                <div class="header">
+                    <h1>الفجر</h1>
+                </div>
+                <div class="body center" style="height: 80%" >
+                    <h1 class="time" id="fajr-time">
+                    </h1>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <h1>الظهر</h1>
+                </div>
+                <div class="body center" style="height: 80%">
+                    <h1 class="time" id="dhuhr-time">
+                    </h1>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <h1>العصر</h1>
+                </div>
+                <div class="body center" style="height: 80%">
+                    <h1 class="time" id="asr-time">
+                    </h1>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <h1>المغرب</h1>
+                </div>
+                <div class="body center" style="height: 80%">
+                    <h1 class="time" id="maghrib-time">
+                    </h1>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <h1>العشاء</h1>
+                </div>
+                <div class="body center" style="height: 80%">
+                    <h1 class="time" id="isha-time">
+                    </h1>
+                </div>
+            </div>  
+            
+        
+        </div>
+        <div class="center" style="margin-top: 120px;">
+        <select name="" id="cities-select" style="width: 300px; height: 35px; font-size: 25px; font-family: tajawal; background: none; color: rgb(49, 47, 47); padding: 5px; border-radius: 20px;">
+        </select>
+    </div>
+    </div>
+</div> -->
+<!-- <script src="testing.js"></script> -->
+<!-- <script src="logic.js"></script> -->
+<!-- <script src="async.js"></script> -->
+<!-- <script src="authentication.js"></script> -->
+
+<!-- login Modal -->
+<div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Username:</label>
+                        <input type="text" class="form-control" id="username-input" value="yarob99999grfh">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Password:</label>
+                        <input type="password" class="form-control" id="password-input" value="123456">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button onclick="loginBtnClicked()" type="button" class="btn btn-primary" id="alert-message">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- success alert  -->
+<div id="liveAlertPlaceholder" class="show fade"></div>
+<!-- success alert  -->
+<!-- end login Modal -->
+
+<!-- register Modal -->
+<div class="modal fade" id="register-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Register A New User</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- <form> -->
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Name:</label>
+                        <input type="text" class="form-control" id="register-name-input" value="Yarobff">
+                    </div>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Username:</label>
+                        <input type="text" class="form-control" id="register-username-input" value="yarob99999grfh">
+                    </div>
+                    <!-- <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Email:</label>
+                        <input type="text" class="form-control" id="register-email-input" value="yarofffb.hm@gmail.com">
+                    </div> -->
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Password:</label>
+                        <input type="password" class="form-control" id="register-password-input" value="123456">
+                    </div>
+                <!-- </form> -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button onclick="registerBtnClicked()" type="button" class="btn btn-primary"
+                    id="alert-message">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- success alert  -->
+<div id="liveAlertPlaceholder" class="show fade"></div>
+<!-- success alert  -->
+
+<!-- End register Modal -->
+
+<!-- navigation BAR con -->
+
+<div class="container ">
+<div class="d-flex justify-content-center">
+   <div class="col-9">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow pt-3 ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">facebook</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">profile</a>
+                </li>
+            </ul>
+            <!-- login && Register btn -->
+            <div id="container-login">
+                <button id="login-btn" type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#login-modal">login</button>
+                <button id="register-btn" type="button" class="btn btn-outline-success"  data-bs-toggle="modal" data-bs-target="#register-modal">Register</button>
+            </div>
+            <!-- login && Register btn -->
+
+            <!-- logout btn -->
+            <div id="container-logout">
+                <button onclick="logout()" id="logout-btn" type="button" class="btn btn-outline-danger" data-bs-toggle="modal">logout</button>
+            </div>
+            <!-- logout btn -->
+        </div>
+    </div>
+    </nav>
+   </div>
+</div>
+</div>
+<div class="container " style="height: 1000px;">
+    <!-- POSTS -->
+    <div class="d-flex justify-content-center mt-5">
+        <div class="col-9">
+            <div id="posts">
+                <!-- POST -->
+            </div>
+        </div>
+    </div>
+</div>
+<script src="loginFace.js"></script>
+<script src="./node_modules//bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
